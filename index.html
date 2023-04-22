@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Finder</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <nav class="navigation">
+
+        <a href="https://github.com/siddhigate/github-profile-finder" target="_blank" style="text-decoration: none; display: flex; justify-content: center; align-items: center;">
+        <img src="./assets/github.png" alt="" class="icon">  
+            <div class="nav-brand">
+                githubProfileFinder
+            </div>
+        </a>
+        
+    </nav>
+
+    
+    <header class="container-header">
+        <img class="header-image" src="./assets/github.svg" alt="">
+        <h1 class="header-heading">GitHub Profile Finder</h1>
+    </header>
+
+    <main>
+        <div class="container-main">
+            <input id="search-txt" type="text" placeholder="Enter GitHub username">
+            <button id="search-btn"><img src="./assets/search.svg" alt="" class="icon-search"></button>
+        </div>
+        <img src="./assets/loading.gif" alt="" class="loading">
+        <div class="error">
+
+        </div>
+        <div class="search-result-card">
+
+            <div class="profile-card">
+
+            </div>
+            <div class="repos-card">
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

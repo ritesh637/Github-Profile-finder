@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root {
+    --primary-color: #1E1E2C;
+    --input-color: #2E3047;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==== navigation ===== */
+.navigation{
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border-bottom-left-radius: 0.15rem;
+    border-bottom-right-radius: 0.15rem;
+}
+
+.list-non-bullet{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    text-decoration: none;
+    text-align: right;
+    margin: 0 1rem;
+}
+
+li{
+    margin: 0 1rem;
+}
+.icon{
+    border-radius: 0.25rem;
+    width:2rem;
+    display: inline;
+    margin: 0 1rem;
+}
+
+/* ===== header ===== */
+.container-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:20vh;
+}
+
+
+.header-image{
+    width:6rem;
+    margin-right: 1rem;
+}
+
+/* ===== main Search===== */
+
+main{
+    margin-top:3rem;
+    
+}
+
+.container-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    margin: auto;
+}
+
+input{
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+    padding:1rem;
+    font-size: 1rem;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    width: 60%;
+    text-align: left;
+}
+
+button{
+    background: transparent;
+    border: none;
+    width: 2rem;
+    cursor: pointer;
+}
+
+.icon-search{
+    width: 2rem;
+    border: 1px solid var(--primary-color);
+    padding:0.5rem;
+    margin-left:1rem;
+    border-radius: 0.5rem;
+    background: var(--primary-color);
+}
+
+/*=== search result card===  */
+.search-result-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:90%;
+    margin: auto;
+    margin-top:3rem;
+    margin-bottom: 3rem;
+
+}
+
+.profile-card{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image{
+    width: 14rem;
+    border-radius: 7rem;
+}
+
+.profile-username{
+    color: var(--input-color);
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.profile-stats{
+    display: flex;
+    margin-top:0.5rem;
+}
+.icon-stats{
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0 0.25rem 0 0.5rem;
+    color: darkgray
+}
+
+.repos-card{
+    
+    width:80%;
+    /* margin-left:2rem; */
+    padding: 0 1rem;
+    height: 100%;    
+    margin-top:2rem;
+}
+
+.repo-card{
+    border:1px solid darkgray;
+    /* width: 45%; */
+    
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top:1rem;
+}
+
+.repo-title{
+    display: flex;
+    margin-top: 0.25rem;
+}
+
+
+.repo-icon{
+    margin: 0 1rem 0 0.5rem;
+    width:1.5rem;
+    height:1.5rem;
+}
+
+.repo-name{
+    color: #0969da;
+    font-weight: 300;
+}
+
+.repo-date{
+    margin: 0.75rem 0 0 0.5rem;
+    font-size: 0.9rem;
+    color: darkgray
+}
+
+.repo-stats{
+    display: flex;
+    margin-top:0.75rem;
+}
+
+.follow-count{
+    /* color:#6B7280; */
+    font-size:0.95rem;
+    margin-left: 0.2rem;
+}
+
+.star-count, .fork-count{
+    margin-right:1rem;
+    font-size: 0.95rem;
+}
+
+/* ===== loading ====== */
+.loading{
+    display: block;
+    margin:auto;
+    display: none;
+    margin-top:3rem;
+}
+
+/* ==== error ==== */
+.error-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:2rem;
+}
+
+.error-img{
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top:2rem;
+    
+}
+
+.error-msg{
+    margin:1.2rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align:center;
+}
+
+.no-repo-error-img {
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top:2rem;
+    
+}
+
+.no-repo-error-div {
+    border:1px solid darkgray;
+    border-radius: 0.5rem;
+    
+}
+
+@media (min-width: 760px) {
+
+    .container-header{
+        flex-direction: row;
+    }
+
+    .container-main{
+        width:40%;
+    } 
+
+    .error-img{
+        width:15%;
+        margin-top:2rem;
+    }
+
+    .search-result-card{
+        width: 80%;
+    }
+
+    .profile-card{
+        width: 50%;
+    }
+    
+    .error-div{
+        margin-top: 2rem;
+    }
+
+    .no-repo-error-img {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1000px){
+
+    .search-result-card{
+        flex-direction: row;
+        
+    }
+
+    
+    .repos-card{
+        margin-left:3rem;
+    }
+
+}
+
+
+@media (min-width: 1300px){
+
+    .search-result-card{
+        flex-direction: row;
+        width: 60%;
+    }
+
+    .repos-card{
+        margin-left:3rem;
+    }
+
+}
+
